@@ -1,0 +1,53 @@
+.add-bank-box {
+  background: var(--secondary-color);
+  padding: 50px;
+  /* border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+    border: 5px solid rgba(0, 0, 0, 0.1); */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+}
+
+.add-bank-box .form-label {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--quaternary-color);
+  padding: 12px 6px;
+  margin: 0;
+}
+
+.add-bank-box .form-control::placeholder {
+  font-size: 0.8em;
+}
+
+.check-terms .custom-control-label {
+  font-size: 1.5em;
+  padding-left: 1em;
+  padding-top: 0.15em;
+}
+
+.check-terms .custom-control-label:before {
+  width: 2rem;
+  height: 2rem;
+  top: 0;
+  left: 0;
+}
+
+.custom-control-input:checked ~ .custom-control-label:before {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.custom-control-label::after {
+  top: 0 !important;
+  left: 0 !important;
+}
+.terms-link {
+  color: var(--senary-color) !important;
+  font-size: 14px;
+  font-weight: 700;
+}

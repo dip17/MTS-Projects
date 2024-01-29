@@ -1,0 +1,13 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.formikConnect = formikConnect;
+
+var _formik = require("formik");
+
+function formikConnect(component) {
+  return (0, _formik.connect)(component);
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3NyYy9mb3JtaWtDb25uZWN0LnRzeCJdLCJuYW1lcyI6WyJmb3JtaWtDb25uZWN0IiwiY29tcG9uZW50Il0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQ0E7O0FBRU8sU0FBU0EsYUFBVCxDQUNMQyxTQURLLEVBRUw7QUFDQSxTQUFPLHFCQUFRQSxTQUFSLENBQVA7QUFHRCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IENvbXBvbmVudFR5cGUgfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7IGNvbm5lY3QgfSBmcm9tIFwiZm9ybWlrXCI7XG5cbmV4cG9ydCBmdW5jdGlvbiBmb3JtaWtDb25uZWN0PEMgZXh0ZW5kcyBDb21wb25lbnRUeXBlPHsgZm9ybWlrOiBhbnkgfT4+KFxuICBjb21wb25lbnQ6IENcbikge1xuICByZXR1cm4gY29ubmVjdChjb21wb25lbnQgYXMgYW55KSBhcyBDb21wb25lbnRUeXBlPFxuICAgIE9taXQ8R2V0UHJvcHM8Qz4sIFwiZm9ybWlrXCI+XG4gID47XG59XG5cbnR5cGUgR2V0UHJvcHM8VD4gPSBUIGV4dGVuZHMgQ29tcG9uZW50VHlwZTxpbmZlciBQPiA/IFAgOiBuZXZlcjtcbiJdfQ==

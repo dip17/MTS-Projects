@@ -1,0 +1,138 @@
+.dashboard-content-creator-sec {
+  margin-top: 80px;
+  margin-bottom: 4em;
+}
+
+.dashboard-card {
+  margin-bottom: 50px;
+  padding: 2em;
+  height: 120px;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-card.bg-blue {
+  background-color: #0ec6c6;
+}
+
+.dashboard-card.bg-blue .dashboard-icon-sec i {
+  color: #0ec6c6;
+}
+
+.dashboard-card.bg-green {
+  background-color: #64bc36;
+}
+
+.dashboard-card.bg-green .dashboard-icon-sec i {
+  color: #64bc36;
+}
+
+.dashboard-card.bg-yellow {
+  background-color: #ffae00;
+}
+
+.dashboard-card.bg-yellow .dashboard-icon-sec i {
+  color: #ffae00;
+}
+
+.dashboard-card.bg-red {
+  background-color: #f3103c;
+}
+
+.dashboard-card.bg-red .dashboard-icon-sec i {
+  color: #f3103c;
+}
+
+.dashboard-card.bg-pink {
+  background-color: #e80d7a;
+}
+
+.dashboard-card.bg-pink .dashboard-icon-sec i {
+  color: #e80d7a;
+}
+
+.dashboard-card.bg-theme {
+  background-color: #610de8;
+}
+
+.dashboard-card.bg-theme .dashboard-icon-sec i {
+  color: #610de8;
+}
+
+.dashboard-card .dashboard-icon-sec i {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  box-shadow: 1px 5px 24px 0 #0ec6c626;
+  text-align: center;
+  font-size: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-content {
+  padding-left: 1.5em;
+}
+
+.dashboard-content h6 {
+  font-size: 1.5em;
+  color: var(--secondary-color);
+  letter-spacing: 0.3px;
+}
+
+.dashboard-content p {
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.dashboard-box {
+  box-shadow: 0 8px 16px 0 rgb(162 169 204 / 24%);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 2em;
+}
+
+.dashboard-box .dashboard-user-img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard-box .dashboard-user-card {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5em;
+  border-bottom: 1px solid #e8edf2;
+  padding-bottom: 1.5em;
+}
+
+.dashboard-user-details {
+  padding-left: 1.5em;
+}
+
+.dashboard-user-details h5 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.dashboard-user-details a {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #999999;
+  margin-bottom: 0;
+}
+
+.dashboard-box p {
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #999999;
+  margin-bottom: 0;
+}

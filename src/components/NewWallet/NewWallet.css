@@ -1,0 +1,183 @@
+.new-wallet-sec{
+    margin-top: 85px;
+    margin-bottom: 4em;
+}
+
+.new-wallet-current-balance-box{
+    background: var(--secondary-color);
+    box-shadow: 0px 0px 7.20117px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2em;
+}
+
+.new-wallet-current-balance-info-sec h4{
+    color: #9896A1;
+    font-weight: 400;
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+
+.current-balance-info p{
+    color: #233A7D;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.current-balance-info svg{
+    fill: var(--primary-color);
+    width: 3em;
+}
+
+.current-balance-info{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.new-wallet-current-balance-info-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.new-wallet-action-btn{
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.new-wallet-action-btn .add-token-btn{
+    background-color: #F5F7FA!important;
+    border-color: #F5F7FA!important;
+    border-radius: 0!important;
+    color:var(--teritary-color)!important;
+    font-size:1.5em!important;
+    font-weight: 600!important;
+    padding: 0.8em 2em!important;
+}
+
+.new-wallet-action-btn .add-token-btn:hover{
+    background-color: #F5F7FA!important;
+    border-color: #F5F7FA!important;
+    border-radius: 0!important;
+    color:var(--teritary-color)!important;
+}
+
+.new-wallet-action-btn .add-token-btn:focus,
+.new-wallet-action-btn .add-token-btn:active{
+    background-color: #F5F7FA!important;
+    border-color: #F5F7FA!important;
+    border-radius: 0!important;
+    color:var(--teritary-color)!important;
+}
+
+.new-wallet-action-btn .withdraw-btn{
+    background-color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+    border-radius: 0!important;
+    color:var(--secondary-color)!important;
+    font-size:1.5em!important;
+    font-weight: 600!important;
+    padding: 0.8em 2em!important;
+}
+
+.new-wallet-action-btn .withdraw-btn:hover{
+    background-color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+    border-radius: 0!important;
+    color:var(--secondary-color)!important;
+}
+
+.new-wallet-action-btn .withdraw-btn:focus,
+.new-wallet-action-btn .withdraw-btn:active{
+    background-color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
+    border-radius: 0!important;
+    color:var(--secondary-color)!important;
+}
+
+.refferal-bonus-card h4{
+    color: #9896A1;
+    font-weight: 400;
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+
+.refferal-balance-info p{
+    color: #233A7D;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.refferal-balance-info svg{
+    fill: #08D26F;
+    width: 3em;
+}
+
+.refferal-bonus-card{
+    background: var(--secondary-color);
+    box-shadow: 0px 0px 7.20117px rgb(0 0 0 / 10%);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1em;
+    gap: 1em;
+}
+
+.refferal-balance-info{
+    display: flex;
+    align-items: center;
+    grid-gap: 1.5em;
+    gap: 1.5em;
+}
+
+.new-wallet-transaction-sec{
+    background: var(--secondary-color);
+    box-shadow: 0px 0px 7.20117px rgba(0, 0, 0, 0.1);
+    padding:2em;
+    margin-top:2em;
+}
+
+.new-wallet-transaction-box tr{
+    background-color:#F5F7FB;
+}
+
+.new-wallet-transaction-box td {
+    font-size: 1.4em;
+    font-weight: 500;
+    vertical-align: middle;
+    white-space: nowrap;
+    color:var(--tertiary-color);
+    border-top: 0!important;
+    padding:1.5em!important;
+}
+
+.new-wallet-transaction-box td:first-child{
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.new-wallet-transaction-box td:last-child{
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.new-wallet-transaction-box table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+.new-wallet-transaction-box th {
+    font-size: 1.4em;
+    font-weight: 500;
+    color: var(--quaternary-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)!important;
+    border: 0;
+    white-space: nowrap;
+    padding:1.5em!important;
+    border-top: 1px solid rgba(0, 0, 0, 0.1)!important;
+}
