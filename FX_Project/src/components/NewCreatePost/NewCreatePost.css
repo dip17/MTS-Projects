@@ -1,0 +1,251 @@
+.new-create-post-sec {
+  margin: 8em 0 2em;
+}
+.new-post-title {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.new-post-title span {
+  font-weight: 600;
+  font-size: 1.6em;
+}
+.select-post-format {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin: 2em 0 0;
+}
+.select-post-format button {
+  background-color: #f2f2f7;
+  color: var(--tertiary-color);
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 0.5em 1.5em;
+  text-align: center;
+  border-radius: 50px;
+  border-color: transparent;
+}
+.select-post-format button:hover,
+.select-post-format button:active,
+.select-post-format button:focus {
+  background-color: #f2f2f7 !important;
+  color: var(--tertiary-color) !important;
+  border-color: transparent !important;
+  box-shadow: none;
+}
+.select-post-format .post-active-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color) !important;
+}
+.select-post-format .post-active-btn:active,
+.select-post-format .post-active-btn:hover,
+.select-post-format .post-active-btn:focus {
+  background-color: var(--primary-color) !important;
+  color: var(--secondary-color) !important;
+  border-color: transparent !important;
+  box-shadow: none;
+}
+.add-post-img {
+  display: flex;
+  align-items: center;
+  margin: 2em 0 0;
+  gap: 4em;
+}
+.file-input__input {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.file-input__label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  gap: 1em;
+  font-size: 14px;
+  padding: 10px 12px;
+  background-color: transparent;
+}
+.file-input__label span {
+  color: var(--tertiary-color);
+  font-weight: 500;
+}
+
+.file-input__label svg {
+  height: 16px;
+  margin-right: 4px;
+}
+.add-post-text {
+  margin: 2em 0 0;
+}
+.add-post-text textarea#exampleForm\.ControlTextarea1 {
+  border: 1px solid #ddd !important;
+  height: 10em !important;
+  border-radius: 10px !important;
+  padding: 1em !important;
+  font-size: 1.1em !important;
+}
+.new-create-box {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+  padding: 3em;
+  border-radius: 10px;
+}
+.new-category-card {
+  background-color: #f2f2f7;
+  color: var(--tertiary-color);
+  border-radius: 5px;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.new-post-category {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.new-add-category {
+  margin: 2em 0 0;
+}
+.new-add-category h4 {
+  margin: 0 0 1em;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+.add-post-subscribe{
+    margin: 2em  0 0;
+}
+.add-post-subscribe h4{
+    font-weight: 600;
+        font-size: 1.6em;
+}
+.add-post-subscribe h4 span{
+    color: var(--quaternary-color);
+}
+.post-sub-amount{
+    background-color: #f2f2f7;
+        color: var(--tertiary-color);
+        border-radius: 5px;
+        padding: 0.5em 1.5em;
+        font-weight: 500;
+        font-size: 1.3em;
+        display: inline-block;
+        margin: 0.5em 0 0;
+}
+.add-post-date-picker{
+    margin: 2em 0 0;
+}
+.add-post-date-picker .form-group .form-check{
+    display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 1em;
+        justify-content: start;
+        padding: 0;
+}
+.add-post-date-picker .form-group .form-check label{
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.add-post-date-picker .form-group .form-check .form-check-input{
+    position: relative;
+}
+.add-post-date-picker .form-group .form-check input[type=checkbox]{
+    margin: 0;
+}
+.add-post-date-time{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.add-post-date-picker .react-datepicker-wrapper{
+    width: auto;
+}
+.add-post-btn button{
+    border: 1px solid var(--primary-color);
+        padding: 8px 30px;
+        font-size: 1.4em;
+        color: var(--secondary-color);
+        font-weight: 500;
+        background: var(--primary-color);
+        border-radius: 5px;
+        transition: opacity .15s ease, background-color .15s ease, box-shadow .15s ease;
+        display: block;
+
+       margin: 1.5em 0 0;
+        text-align: center;
+        cursor: pointer;
+}
+.add-post-btn button:hover , .add-post-btn button:active , .add-post-btn button:focus{
+        background: var(--primary-color) !important;
+        color: var(--secondary-color);
+}
+.add-post-btn{
+    display: flex;
+    justify-content: end;
+}
+.add-post-right-sec .new-feed-footer-sec{
+    padding-top: 2em;
+}
+.new-post-img{
+  height: 25em;
+  background: #000;
+  object-fit: contain;
+}
+.add-post-date-time button.react-datetime-picker__clear-button.react-datetime-picker__button{
+  display: none;
+}
+/* .add-post-date-time button.react-datetime-picker__calendar-button.react-datetime-picker__button{
+  fill: aqua;
+
+} */
+.add-post-date-time .react-datetime-picker{
+  padding:0.5em 1em;
+  background-color: #f2f2f7;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+.react-datetime-picker__inputGroup__input{
+  width:auto;
+}
+.file-input__label img{
+  width: 20px;
+  height: 20px;
+}
+.new-post-title img{
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 767.98px) {
+  .add-post-right-sec{
+    margin: 4em  0 0;
+  }
+    .add-post-img{
+      justify-content: space-between;
+      gap: 0;
+    }
+        .file-input__label{
+          padding: 0;
+          gap: 1em;
+        }
+        .new-create-post-sec{
+          margin: 2em 0 2em;
+        }
+}
+@media (max-width: 1199.98px) {
+  .add-post-right-sec {
+      margin: 4em 0 0;
+    }
+}

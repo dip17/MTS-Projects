@@ -1,0 +1,80 @@
+.altra_chat_audio_container {
+    background: #fff;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 0px;
+    width: 190px;
+    height: 56px;
+    box-shadow: 0px 0px 5px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.altra_chat_audio_btn {
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+}
+
+.altra_chat_audio_btn:focus {
+    outline: none;
+}
+
+.altra_chat_audio_btn:hover {
+    cursor: pointer;
+}
+
+.altra_chat_audio_btn svg {
+    width: 30px;
+    height: 30px;
+    fill: #7d05e7;
+}
+
+.altra_chat_audio_btn:hover svg {
+    fill: #fdbb2d;
+}
+
+
+
+.altra_chat_audio_btn svg {
+    font-size: 4em;
+    color: #7d05e7;
+}
+
+.altra_chat_audio_range {
+    /* background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    width: 100px;
+    position: relative;
+}
+
+.altra_chat_audio_range .bar__progress {
+    position: absolute;
+    width: 80px;
+    flex: 1 1;
+    border-radius: 5px;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(10px, -50%);
+}
+
+.altra_chat_audio_range .bar__progress__knob {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border: 1.5px solid white;
+    border-radius: 50%;
+    background-color: #7d05e7;
+}

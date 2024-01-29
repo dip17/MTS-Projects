@@ -1,0 +1,21 @@
+.vc-single-sec {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.eachvideo {
+  background: #f5f7f9;
+  padding: 3rem;
+  border-radius: 10px;
+}
+
+.bn-actions {
+  padding: 0.5rem 1rem !important;
+  background-color: blueviolet !important;
+  margin: 10px 5px;
+  color: #fff !important;
+}
+
+.bn-actions i {
+  font-size: 14px !important;
+}

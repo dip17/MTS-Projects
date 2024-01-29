@@ -1,0 +1,512 @@
+.new-settings-sec{
+    padding-top: 8em;
+    padding-bottom: 4em;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+.new-settings-box {
+    min-height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+}
+
+.new-settings-sidebar {
+    width: 25%;
+    /* padding: 1em; */
+    position: sticky;
+    align-self: flex-start;
+    top: 50px;
+    overflow-y: auto;
+}
+
+.sidebar-links-icon{
+    width: 1.5em;
+}
+
+.new-settings-main-wrapper {
+    width:75%;
+    padding: 0 2em;
+}
+
+.image-upload>input {
+    display: none;
+  }
+
+  .upload-cover-icon{
+    border: none;
+    border-radius:50%;
+    color: #fefefe;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+  .image-upload label{
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+  }
+
+  .new-settings-sidebar-cover-bg{
+    width: 100%;
+    height: 9em;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  .new-settigs-sidebar-header-card{
+    background: var(--secondary-color);
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  .new-settings-user-img-sec .upload-cover-icon{
+    position: absolute;
+    right: -7px;
+    bottom: 7px;
+  }
+
+  .new-settings-user-img-sec{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.new-settings-user-img{
+    height: 9em;
+    width: 9em;
+    object-fit: cover;
+}
+
+.new-settings-user-info h4{
+    font-size: 1.8em;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin-bottom: 0;
+    color: var(--tertiary-color);
+}
+
+.new-settings-user-name{
+    color: #9896A1;
+}
+
+.new-settings-user-name:hover{
+    color: #9896A1;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.new-settings-user-info{
+    margin-top: -5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:1em;
+    padding-bottom: 2em;
+}
+
+.view-featured-story-btn{
+    border: 1px solid var(--primary-color)!important;
+    /* padding: 8px 30px;
+    font-size:1.4em; */
+    color: var(--primary-color);
+    font-weight: 600;
+    background: transparent!important;
+    border-radius: 5px!important;
+    transition: opacity .15s ease,background-color .15s ease,box-shadow .15s ease;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.view-featured-story-btn:hover{
+    background: transparent!important;
+    color: var(--secondary-color)!important;
+    border: 1px solid var(--primary-color)!important;
+}
+
+.view-featured-story-btn img{
+    height: 2.8em;
+    object-fit: scale-down;
+}
+
+.remove-featured-story-btn{
+    border: 1px solid var(--primary-color)!important;
+    padding: 8px 30px!important;
+    font-size:1.4em!important;
+    color: var(--secondary-color)!important;
+    font-weight: 600!important;
+    background: var(--primary-color)!important;
+    border-radius: 5px!important;
+    transition: opacity .15s ease,background-color .15s ease,box-shadow .15s ease;
+    display: block;
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.remove-featured-story-btn:hover{
+    color: var(--secondary-color)!important;
+    border: 1px solid var(--primary-color)!important;
+    background: var(--primary-color)!important;
+}
+
+.new-setting-features-story-sec{
+    gap: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+.new-settings-sidebar-link-sec{
+    margin-top: 3em;
+}
+
+.new-settings-sidebar-link-sec h4{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+    padding: 1.2em;
+    border-left: 4px solid var(--primary-color);
+    margin-bottom: 0;
+}
+
+.new-settings-sidebar-link-list li{
+    border-left: 4px solid rgba(0, 0, 0, 0.1);
+    margin-top:0;
+    width:100%;
+}
+
+.new-settings-sidebar-link-list li:last-child{
+    padding-bottom: 0;
+}
+
+
+.new-settings-sidebar-link-list li a{
+    width: 100%;
+    font-size: 1.5em;
+    color: var(--tertiary-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* .new-settings-sidebar-link-list li:last-child a{
+    padding-bottom: 0;
+} */
+
+.new-setting-list-icon{
+    height: 2em;
+    object-fit: scale-down;
+    width: 2em;
+    max-width: 2em;
+    max-height: 3em;
+}
+
+.new-edit-profile-tab .nav{
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 0;
+    border-bottom:1px solid rgba(101, 97, 227, 0.2);
+}
+
+.new-edit-profile-tab .nav::before{
+    display:none;
+}
+
+.profile-post-tab-icon{
+    max-width: 1.5em;
+    object-fit: contain;
+}
+
+.new-edit-profile-tab .nav-pills .nav-link.active{
+    background-color: transparent;
+    border-bottom: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 0;
+}
+
+.new-edit-profile-tab .nav-pills .nav-link{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 0.5em 0em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color: #9896A1;
+}
+
+.edit-profile-tab-icon{
+    height: 1.6em;
+    object-fit: scale-down;
+}
+
+.settings-personal-info-card{
+    padding: 3em;
+    background: var(--secondary-color);
+    box-shadow: 0px 0px 4px rgb(0 0 0 / 10%);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.settings-personal-info-header h3{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.settings-personal-info-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 1.5em;
+}
+
+.settings-personal-info-card p{
+    color: #9896A1;
+    margin-bottom: 0;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.edit-profile-form .form-control{
+    background-color: #F5F7FB!important;
+    border-radius: 10px!important;
+    border: 0!important;
+    padding: 0em 1em!important;
+    height: 55px!important;
+}
+
+.edit-profile-form .custom-select{
+    background-color: #F5F7FB!important;
+    border-radius: 10px!important;
+    border: 0!important;
+    padding: 0em 1.2em!important;
+    height: 55px!important;
+    font-size: 1.3em;
+    color: #6c757d!important;
+}
+
+.edit-profile-form .custom-select:focus{
+    box-shadow: none!important;
+}
+
+.edit-profile-form .custom-select option{
+    font-size: 1em;
+}
+
+.edit-profile-form .form-control::placeholder{
+    font-size: 0.75em;
+}
+
+.edit-profile-form .form-label{
+    font-size: 1.5em;
+    color: var(--tertiary-color);
+    font-weight: 500;
+}
+
+.edit-profile-form .form-text{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    color: #9896A1!important;
+}
+
+.edit-profile-form{
+    padding-top: 3em;
+}
+
+.edit-profile-form .input-group .form-control {
+    border-top-right-radius: 0!important;
+    border-bottom-right-radius: 0!important;
+}
+
+.edit-profile-form .input-group .input-group-text{
+    background-color: #f8f9fc!important;
+    border: 0!important;
+    padding: 0em 2em!important;
+    height: 55px!important;
+    box-shadow: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.edit-profile-form textarea.form-control{
+    height: auto!important;
+    padding: 1em 1em!important;
+}
+
+.edit-profile-form .margin-btm-zero.form-group{
+    margin-bottom: 0!important;
+}
+
+.edit-profile-form .form-group{
+    margin-bottom: 2em!important;
+}
+
+.settings-submit-btn{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: 1px solid var(--primary-color)!important;
+    padding: 8px 30px!important;
+    font-size:1.4em!important;
+    color: var(--secondary-color);
+    font-weight: 500!important;
+    background: var(--primary-color)!important;
+    transition: opacity .15s ease,background-color .15s ease,box-shadow .15s ease;
+    display:inline-block;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.settings-submit-btn:hover{
+    color: var(--secondary-color)!important;
+    background: var(--primary-color)!important;
+    border: 1px solid var(--primary-color)!important;
+}
+
+.settings-btn-sec{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 3em;
+}
+
+.amount-display-btn{
+    background-color: #F5F7FB;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 8px 30px;
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.amount-display-btn input{
+    border: none;
+    background-color: inherit;
+    width:60px;
+}
+
+.amount-display-btn input::-webkit-inner-spin-button, 
+.amount-display-btn input::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.settings-subscription-card{
+    grid-template-columns: 500px auto;
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+}
+
+.settings-subscription-amount-choose .form-label{
+    color: #9896A1;
+    font-size: 1.3em;
+    margin-bottom: 2em;
+}
+
+.settings-subscription-amount-choose .form-label span{
+    color: var(--tertiary-color);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.settings-personal-info-card h3{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.edit-profile-form .input-range__label{
+    font-family: "Maven Pro", sans-serif !important;
+    font-size: 1.3em;
+    font-weight: 500;;
+}
+
+.edit-profile-form .input-range{
+    line-height: 0;
+}
+
+.settings-subscription-box{
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    gap: 5rem;
+    padding-bottom: 2em;
+}
+
+.help-text-for-add-bank-account{
+    border-bottom: 1px solid rgba(101, 97, 227, 0.2);
+    padding-bottom: 3em;
+    padding-top: 2em;
+}
+
+.settings-subscription-video-audio-box{
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    gap: 5rem;
+    padding-bottom: 2em;
+    margin-top: 4em;
+}
+
+.settings-subscription-video-audio-box .align-center{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.help-note-for-audio-video-call-subscription p span{
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.help-text-for-add-bank-account p{
+    font-size: 1.4em;
+}
+
+.help-text-for-add-bank-account p a{
+    font-size: 1em;
+}
+
+.mobile-edit-profile-sec{
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.new-changes-password-box .change-password-sec .card-body{
+    padding: 0!important;
+}
+
+.new-changes-password-box .edit-profile-form .form-label{
+    margin-bottom: 0.5em;
+}
+
+.two-step-auth-img-sec{
+    text-align: center;
+}
+
+.settings-btn-sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3em;
+}

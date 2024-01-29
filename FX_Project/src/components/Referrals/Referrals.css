@@ -1,0 +1,181 @@
+.referrals-sec{
+    margin-top: 85px;
+    font-family: 'Maven Pro', sans-serif;
+    padding-bottom: 4em;
+}
+
+.referrals-box{
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 4em;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.referrals-header-icons{
+    width:2em;
+}
+
+.referrals-box .form-control {
+    border: 0;
+    padding: 1em 1em;
+    font-size: inherit;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    border: 2px dashed rgba(0, 0, 0, 0.1)!important;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%)!important;
+    margin-bottom: 0;
+    min-height: 3em;
+    border-right: 0!important;
+    border-radius: 0!important;
+}
+
+.btn.btn-referal {
+    background: #e50914;
+    color: #ffffff!important;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.referrals-box .input-group-text{
+    background-color: transparent;
+    border: 2px dashed rgba(0, 0, 0, 0.1)!important;
+    border-radius: 0!important;
+    border-left: 0!important;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%)!important;
+    background-color: #ffffff!important;
+}
+
+.referrals-sub-sec{
+    padding-top: 2em;
+}
+
+.referrals-social-link-sec{
+    grid-template-columns: repeat(5,1fr);
+    display: grid;
+    grid-gap: 2rem;
+    gap: 2rem;
+}
+
+.referrals-social-link-card{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.referrals-social-link-card p {
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+.referrals-social-link-card i{
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+.email-bg{
+    color: rgb(127, 127, 127);
+}
+
+.whatsapp-bg {
+    color: rgb(44, 183, 66);
+}
+
+.facebook-bg {
+    color: rgb(59, 89, 152);
+}
+
+.twitter-bg{
+    color: rgb(0, 172, 237);
+}
+
+.reddit-bg{
+    color: rgb(95, 153, 207);
+}
+
+.referrals-left p{   
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.referrals-right p{   
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.referrals-card{
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-gap: 2rem;
+    gap: 2rem;
+    /* margin-top: 1em; */
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    padding:1em 0;
+}
+
+.referrals-count-sec{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+    padding: 20px;
+    border-radius: 0.5em;
+    padding-bottom: 2.5em;
+}
+
+.how-its-work-sec{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+    grid-gap: 2rem;
+    gap: 2rem;
+}
+
+.referrals-sec h4{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.how-its-work-card{
+    display: flex;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+    padding: 20px;
+    border-radius: 0.5em;
+}
+
+.how-its-work-icons{
+    max-width: 5em;
+}
+
+.how-its-work-info{
+    padding-left: 1.5em;
+}
+
+.how-its-work-info h5{
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #373737;
+}
+
+.how-its-work-info p {
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}

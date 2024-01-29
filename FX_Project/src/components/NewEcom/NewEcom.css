@@ -1,0 +1,165 @@
+.new-ecom-banner{
+    background-image: url("./ecom-banner.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 100%;
+    height: 25vh;
+
+}
+.new-ecom-sec{
+    margin-top: 48px;
+    padding-bottom: 4em;
+}
+.new-ecom-search-bar{
+    display: grid;
+    align-items: center;
+    justify-content: end;
+    height: 25vh;
+    grid-template-columns: 500px;
+}
+.new-ecom-search-bar form{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.new-ecom-search-bar form .input-group{
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.new-ecom-search-bar form .input-group-text{
+    background-color: #ffffff;
+    border: none;
+}
+.new-ecom-search-bar form button{
+background: var(--primary-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #6661e7;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    
+}
+.new-ecom-search-bar form button span{
+font-size: 1.3em;
+font-weight: 600;
+}
+.new-ecom-search-bar form button:hover , .new-ecom-search-bar form button:active , .new-ecom-search-bar form button:focus{
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    box-shadow: none;
+    border-color: transparent !important;
+
+}
+.new-ecom-search-bar .input-group input:focus{
+border-bottom-color: transparent !important;
+}
+.new-ecom-product{
+    margin: 2em 0 0;
+}
+.new-ecom-box-bottom{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.8em ;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.profile-content h5 , .profile-content p{
+    margin: 0;
+    color: #ffffff;
+    font-size:1.5em;
+}
+.new-ecom-search-bar .form-control{
+    padding: 1em 1em!important;
+    border-top-left-radius: 5px!important;
+    border-bottom-left-radius: 5px!important;
+}
+
+.new-ecom-search-bar .input-group-text{
+    border-top-right-radius: 5px!important;
+    border-bottom-right-radius: 5px!important;
+}
+
+.new-ecom-search-bar .input-group-text img{
+    width:1.5em;
+}
+
+.new-ecom-search-bar .form-control::placeholder{
+    font-size: 0.9em;
+}
+
+.new-ecom-box{
+    position: relative;
+}
+.new-ecom-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+}
+.ecom-product-img{
+    width: 100%;
+        height: 22em;
+        object-fit: cover;
+        border-radius: 10px;
+}
+.new-ecom-list{
+    padding:1em 0;
+}
+/* .new-ecom-list h3{
+    font-size: 1.8em;
+        margin: 0 0 1em;
+        font-weight: 600;
+} */
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+.ecom-product-rating{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.ecom-product-price h4 , .ecom-product-price h3{
+    color: #ffffff;
+    margin: 0;
+}
+.ecom-product-price h3 span{
+    padding-left: 0.5em;
+}
+.ecom-product-price{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.ecom-product-bottom-rating{
+    align-items: unset;
+}
+.ecom-rating{
+    justify-content: end;
+}
+@media (max-width: 1199.98px)  {
+    .new-ecom-card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 767.98px)  {
+        .new-ecom-card {
+                grid-template-columns: repeat(2, 1fr);
+            }
+                        .new-ecom-box-bottom{
+                            flex-direction: column;
+                        }
+                                                .new-ecom-sec{
+                                                    margin: 0 0 2em;
+                                                }
+}
