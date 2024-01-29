@@ -22,7 +22,7 @@ const NewProfileTab = (props) => {
                                                 }
                                             />
                                         </span>
-                                        <span className="resp-display-none">All</span>
+                                        <span className="resp-display-none">All data</span>
                                     </Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
