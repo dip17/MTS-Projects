@@ -823,6 +823,9 @@
   "payment_mode": "Payment Mode",
   "received_by":"Received By",
   "premium-user-follow":"PREMIUM USER FOLLOWING",
-  "number":"Number"
+  "number":"Number",
+  "enter_event_title_for":"Enter Event Title For " ,
+  "calendar":  "Calendar"
+  
 
 }

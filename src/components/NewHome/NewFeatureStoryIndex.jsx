@@ -81,6 +81,7 @@ var settings = {
 };
 
 const NewFeatureStoryIndex = (props) => {
+
   const [sliderData, setSliderData] = useState([]);
 
   useEffect(() => {
@@ -88,6 +89,7 @@ const NewFeatureStoryIndex = (props) => {
   }, []);
 
   const SliderModalToggle = (status, index, story) => {
+  
     const dataArray = [];
     story.storyFiles.map((data) => {
       dataArray.push({
@@ -110,15 +112,17 @@ const NewFeatureStoryIndex = (props) => {
           ) : (
             <Slider {...settings}>
               <div>
-                <Link>
-                  <div className="new-feature-story-item">
+                
+                  <div className="new-feature-story-item" id="add-story-gap">
                     <div
                       className="new-feature-story-img-sec"
                       data-toggle="modal"
                       data-target="#addStoryModal"
                     >
+                      
                       <Image
                         className="new-feature-story-img"
+                        id="add-story-img"
                         src={localStorage.getItem("user_picture")}
                       />
                       <div className="new-feature-story-add-img-sec">
@@ -131,11 +135,11 @@ const NewFeatureStoryIndex = (props) => {
                         />
                       </div>
                     </div>
-                    <h4>{t("add_story")}</h4>
+                
+                    <h4 className="new-feature-story-add-title">{t("add_story")}</h4>
                 
                   </div>
-                </Link>
-              </div>
+                  </div>
 
               {props.userStories.data.stories &&
                 props.userStories.data.stories.length > 0 &&

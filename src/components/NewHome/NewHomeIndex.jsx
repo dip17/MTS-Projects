@@ -39,9 +39,11 @@ import NewFeedDisplayCard from "./NewFeedDisplayCard";
 import InfiniteScroll from "react-infinite-scroll-component";
 import NewFeedSuggestionCard from "./NewFeedSuggestionCard";
 import NewFeedTrendingCard from "./NewFeedTrendingCard";
+import NewFeedCalendarCard from "./NewFeedCalendarCard";
 
 
 const NewHomeIndex = (props) => {
+  const [showCalendarModal, setShowCalendarModal] = useState(false)
   useEffect(() => {
     props.dispatch(fetchHomePostsStart({
       skip: 0,
@@ -122,7 +124,7 @@ const NewHomeIndex = (props) => {
         <Container>
           <Row>
             <Col md={12}>
-   
+
               <div className="new-home-page-box">
                 <div className="new-home-page-left">
                   {/* <div className="mobile-visible">
@@ -172,9 +174,28 @@ const NewHomeIndex = (props) => {
                 <div className="new-home-page-right">
                   <div className="new-feed-right-sec">
                     <NewHomeSearch desktop />
+
+                  
+
+                      <Link
+                        to="#"
+                        className="bookmarkes-list"
+                        onClick={() => setShowCalendarModal(true)}>
+                        <Image src="assets/images/icons/calendar.svg" className="svg-clone my-p-icons" />
+                      </Link>
+                      
+                      {
+                        showCalendarModal && (
+                          <>
+                            <NewFeedCalendarCard showCalendarModal={showCalendarModal}  setShowCalendarModal={setShowCalendarModal}  />
+
+                          </>
+                        )
+                      }
+            
                     <div className="new-feed-suggestions-trending-sec">
                       <NewFeedSuggestionCard />
-                      {/* <NewFeedTrendingCard /> */}
+                      <NewFeedTrendingCard />
                     </div>
                   </div>
                 </div>

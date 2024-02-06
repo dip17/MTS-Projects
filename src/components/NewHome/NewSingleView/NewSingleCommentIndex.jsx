@@ -65,8 +65,9 @@ const NewSingleCommentIndex = (props) => {
       fetchSinglePostStart({
         post_unique_id: params.post_unique_id,
       })
-    );
-    setSelectedComment(null);
+      );
+      setSelectedComment(null);
+   
   }, [params.post_unique_id]);
 
   useEffect(() => {
@@ -185,7 +186,9 @@ const NewSingleCommentIndex = (props) => {
                       post={props.singlePost.data.post}
                       postId={props.singlePost.data.post.post_id}
                     />
+          
                   </div>
+                  
                   <div className="new-single-page-right">
                     <div className="new-single-post-view-card">
                       <div className="new-single-post-view-header">
@@ -324,6 +327,8 @@ const NewSingleCommentIndex = (props) => {
                           </Dropdown>
                         </div>
                       </div>
+
+                      
 
                       {/* Comment Section */}
                       <div className="new-single-post-view-body">

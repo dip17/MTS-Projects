@@ -35,6 +35,7 @@ const CreatePostIndex = (props) => {
   const [postFileData, setPostFileData] = useState([]);
   const [previewImage, setPreviewImage] = useState(false);
   const [videoPreviewUrl, setVideoPreviewUrl] = useState(false);
+  const [multipleImages, setMultipleImages] = useState([]);
 
   const [paidPost, setPaidPost] = useState(false);
   const [videoTitle, setVideoTitle] = useState("");
@@ -113,9 +114,10 @@ const CreatePostIndex = (props) => {
   }, [!props.fileRemove.loading]);
 
   const handleChangeImage = (event, fileType) => {
+    const filesArray = Array.from(event.target.files);
     let data_array = [];
-
-    [...event.target.files].forEach((file, key) => {
+    // [...event.target.files].forEach((file, key) => {
+    filesArray.forEach((file, key) => {
       let name = "file[" + key + "]";
 
       data_array[name] = file;
@@ -127,9 +129,11 @@ const CreatePostIndex = (props) => {
     setPaidPost(true);
     setDisableVideo(true);
     setDisableAudio(true);
-    props.dispatch(postFileUploadStart(data_array));
-  };
+    setMultipleImages((prevImages) => [...prevImages, ...filesArray]);
 
+    props.dispatch(postFileUploadStart(data_array));
+    console.log(data_array, "data_array");
+  };
   const handleChangeVideo = (event, fileType) => {
     let data_array = [];
 
@@ -167,6 +171,7 @@ const CreatePostIndex = (props) => {
     setDisableVideo(true);
     props.dispatch(postFileUploadStart(data_array));
   };
+
 
   const handleClose = (event, post_file) => {
     event.preventDefault();
@@ -213,6 +218,7 @@ const CreatePostIndex = (props) => {
       //       : [],
       //   })
       // );
+
       const notificationMessage = getErrorNotificationMessage(
         t("please_upload_media_files")
       );
@@ -311,8 +317,8 @@ const CreatePostIndex = (props) => {
                           {props.fileUpload.loadingButtonContent !== null
                             ? props.fileUpload.loadingButtonContent
                             : props.savePost.loadingButtonContent !== null
-                            ? props.savePost.loadingButtonContent
-                            : t("post")}
+                              ? props.savePost.loadingButtonContent
+                              : t("post")}
                         </Button>
                       ) : (
                         <Button
@@ -354,7 +360,7 @@ const CreatePostIndex = (props) => {
                         getEditorRawContent={setEditorContentstate}
                         getEditorHtmlContent={setEditorHtmlContent}
                         dispatch={props.dispatch}
-                        // searchUser={props.searchUser}
+                      // searchUser={props.searchUser}
                       />
                     </div>
                   </div>
@@ -362,7 +368,7 @@ const CreatePostIndex = (props) => {
 
                 <Col sm={12} md={6} className="mt-3 mt-lg-4">
                   {props.postCategories.data.post_categories &&
-                  props.postCategories.data.post_categories.length > 0 ? (
+                    props.postCategories.data.post_categories.length > 0 ? (
                     <>
                       <Form.Group className="mb-0">
                         <Form.Label className="edit-input-label mb-3 mb-lg-3">
@@ -487,6 +493,10 @@ const CreatePostIndex = (props) => {
                   )}
                 </Col>
 
+
+
+
+
                 <Col sm={12} md={6} className="mt-3 mt-lg-4">
                   {localStorage.getItem("is_content_creator") == 2 ? (
                     <div className="left-half post-write">
@@ -600,10 +610,10 @@ const CreatePostIndex = (props) => {
                   ) : (
                     ""
                   )}
-                  {previewImage && postFileData ? (
+                  {/* {previewImage && postFileData ? (
                     <Row>
                       {postFileData.map((image, index) => (
-                        <Col sm={12} md={6}>
+                        <Col sm={12} md={6} key={index}>
                           <div className="post-img-preview-sec">
                             <Link
                               to="#"
@@ -614,6 +624,29 @@ const CreatePostIndex = (props) => {
                             <Image
                               alt="#"
                               src={image}
+                              className="post-video-preview"
+                            />
+                          </div>
+                        </Col>
+                      ))}
+                    </Row>
+                  ) : null} */}
+
+
+                  {previewImage && multipleImages.length > 0 ? (
+                    <Row>
+                      {multipleImages.map((image, index) => (
+                        <Col sm={12} md={6} key={index}>
+                          <div className="post-img-preview-sec">
+                            <Link
+                              to="#"
+                              onClick={(event) => handleClose(event, image)}
+                            >
+                              <i className="far fa-times-circle"></i>
+                            </Link>
+                            <Image
+                              alt="#"
+                              src={URL.createObjectURL(image)}
                               className="post-video-preview"
                             />
                           </div>

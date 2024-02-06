@@ -33,6 +33,16 @@
   border-radius: 50%;
   width: 4em;
 }
+#add-story-img{
+  height: 6.4em !important;
+  width: 6.4em !important;
+}
+#add-story-gap{
+  grid-gap: 1em;
+}
+.new-feature-story-add-title{
+  font-size: 1.5em !important;
+}
 
 .new-feature-story-add-img {
   width: 1.5em;
